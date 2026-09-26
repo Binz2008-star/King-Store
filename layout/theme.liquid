@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <title>{% if page_title %}{{ page_title }}{% if current_tags %} – {{ current_tags | join: ', ' }}{% endif %}{% else %}King Store L.L.C{% endif %}</title>
+  {{ content_for_header }}
+  {{ 'king-store-brand.css' | asset_url | stylesheet_tag }}
+  <style>
+    body{margin:0;background:#FBF7F0;color:#2A2220;font-family:Arial,sans-serif}
+    .king-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px max(24px,4vw);background:#fff;border-bottom:1px solid rgba(180,122,42,.16)}
+    .king-header img{width:150px;height:auto}.king-nav{display:flex;gap:24px}.king-nav a{color:#2A2220;text-decoration:none}.king-nav a:hover{color:#B47A2A}
+    .king-footer{margin-top:60px;padding:40px 24px;text-align:center;background:#2A2220;color:#FBF7F0}
+    .king-footer a{color:#D5A64A}
+    @media(max-width:749px){.king-header{padding:14px 18px}.king-header img{width:120px}.king-nav{gap:12px;font-size:13px}}
+  </style>
+</head>
+<body>
+  <header class="king-header">
+    <a href="{{ routes.root_url }}" aria-label="King Store home">
+      <img src="{{ 'king-store-logo.svg' | asset_url }}" alt="King Store L.L.C">
+    </a>
+    <nav class="king-nav" aria-label="Main navigation">
+      <a href="{{ routes.all_products_collection_url }}">Shop</a>
+      {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}">Account</a>{% endif %}
+      <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+    </nav>
+  </header>
+  <main id="MainContent" role="main">{{ content_for_layout }}</main>
+  <footer class="king-footer">
+    <strong>King Store L.L.C</strong><br>
+    <span>Curated for the UAE.</span>
+  </footer>
+</body>
+</html>
