@@ -1,0 +1,12 @@
+[
+  {
+    "name": "King Store",
+    "settings": [
+      {"type":"header","content":"Brand"},
+      {"type":"text","id":"brand_name","label":"Brand name","default":"King Store L.L.C"},
+      {"type":"color","id":"brand_gold","label":"Gold","default":"#B47A2A"},
+      {"type":"color","id":"brand_rose","label":"Rose gold","default":"#A8655D"},
+      {"type":"color","id":"brand_cream","label":"Cream","default":"#FBF7F0"}
+    ]
+  }
+]
