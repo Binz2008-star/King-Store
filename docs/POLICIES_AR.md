@@ -2,6 +2,8 @@
 
 شوبيفاي ما بيسمح لي عدّل السياسات من برّا لوحة التحكم، فهاي النصوص جاهزة تنسخها وتلصقها بنفسك.
 
+> ⚠️ **ما في رخصة تجارية لسّا (2026-09-27).** كل ذكر لـ "L.L.C" أو "شركة ذات مسؤولية محدودة" انشال من هالنصوص، لأنو ما بيصير نقول إنّا شركة وإحنا مش مسجّلين. **لا تلصق "الإشعار القانوني" (Legal notice)** لحتى تطلع الرخصة، ووقتها منحط فيه اسم الرخصة ورقمها متل ما هم.
+
 **مكانها:** من Shopify Admin افتح Settings، بعدين Policies. انسخ كل نص تحت عنوانه، والصقه مكان النص القديم، وبعدين اضغط Save.
 
 الأرقام المعتمدة بهالنصوص:
@@ -54,11 +56,11 @@ Returns: unopened, unused items in original packaging within 7 days of delivery.
 
 ## شروط الخدمة (Terms of service)
 
-**شروط الخدمة - King Store L.L.C**
+**شروط الخدمة - King Store**
 
 باستخدامك لهذا الموقع وإتمام أي طلب، فأنت توافقين على هذه الشروط.
 
-**1. معلومات المتجر:** King Store L.L.C، عجمان، الإمارات العربية المتحدة. التواصل: واتساب +971 52 223 3989.
+**1. معلومات المتجر:** King Store، عجمان، الإمارات العربية المتحدة. التواصل: واتساب +971 52 223 3989.
 
 **2. المنتجات والأسعار:** جميع الأسعار بالدرهم الإماراتي. الصور توضيحية وقد يختلف التغليف حسب الدفعة. النتائج قد تختلف من شخص لآخر. يحق لنا تعديل الأسعار في أي وقت، ولا يؤثر ذلك على الطلبات المؤكدة.
 
@@ -80,7 +82,7 @@ By using this site you agree to these terms. Prices are in AED. Delivery within 
 
 ## معلومات التواصل (Contact information)
 
-**تواصلي معنا - King Store L.L.C**
+**تواصلي معنا - King Store**
 
 **واتساب:** +971 52 223 3989  
 **البريد الإلكتروني:** robenedwan@gmail.com  
@@ -102,8 +104,7 @@ WhatsApp: +971 52 223 3989 · Email: robenedwan@gmail.com · Location: Ajman, UA
 
 **الإشعار القانوني - Legal Notice**
 
-**الاسم التجاري:** King Store L.L.C  
-**الشكل القانوني:** شركة ذات مسؤولية محدودة  
+**الاسم التجاري:** King Store  
 **المقر:** عجمان، الإمارات العربية المتحدة
 
 **التواصل:** واتساب +971 52 223 3989 · robenedwan@gmail.com
@@ -112,4 +113,4 @@ WhatsApp: +971 52 223 3989 · Email: robenedwan@gmail.com · Location: Ajman, UA
 
 
 ---
-Company: King Store L.L.C, Ajman, UAE. Contact: WhatsApp +971 52 223 3989, robenedwan@gmail.com. Governed by the laws of the United Arab Emirates.
+Company: King Store, Ajman, UAE. Contact: WhatsApp +971 52 223 3989, robenedwan@gmail.com. Governed by the laws of the United Arab Emirates.
