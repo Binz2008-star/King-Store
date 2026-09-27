@@ -13,7 +13,7 @@ The handoff brief says the store has **zero products** and little business conte
 | # | Finding | Severity |
 |---|---------|----------|
 | F1 | **4 products exist** (status ACTIVE, but published to **0 sales channels**, so customers can't see them). One is a **duplicate** (Moroccan black soap is listed twice). | High |
-| F2 | Product SKUs (e.g. `200009122:100015911#2pcs`) and supplier-sized stock counts (514, 268) match an **AliExpress-style dropshipping import**. The sourcing model looks decided in practice but hasn't been confirmed. | High |
+| F2 | **Confirmed by owner (2026-09-27): products were imported with DSers (AliExpress dropshipping).** SKUs (e.g. `200009122:100015911#2pcs`) are AliExpress variant IDs, and stock counts (514, 268) are supplier stock, not King Store stock. | High |
 | F3 | The Terms of Service promise **"delivery within the UAE in 1–2 business days"**. Cross-border dropshipping can't reliably meet that. | Critical |
 | F4 | Shipping promises disagree: the ToS says **AED 15, free over AED 150**. The actual rates are **AED 25** plus a second **AED 0** rate with the same name ("قياسي"). An **International zone (27 countries, AED 70)** is also active even though the business is UAE-only. | High |
 | F5 | The business address disagrees: the policies say **Abu Dhabi**, the store address says **Dubai**, the location is named **"Ajman"**, and the privacy policy says **"Ajman, dubai DU"**. | High |
@@ -109,6 +109,20 @@ Deferred until the first category proves demand: fashion, accessories, lifestyle
 
 No supplier has been chosen or contacted. That decision belongs to the owner.
 
+### 5a. DSers-specific actions (owner confirmed DSers on 2026-09-27)
+
+Staying on DSers is a legitimate way to test demand, but the store must stop promising what AliExpress fulfilment can't deliver. Before launch:
+
+1. **Check each product in DSers:** ship-from country, shipping method and its quoted delivery time to the UAE, and landed cost (product + shipping). Record these per SKU. Some AliExpress listings ship from a local or regional warehouse and many ship from China. The delivery promise must follow the slowest product in the catalog.
+2. **Rewrite the delivery promises to match** the quoted times, in the ToS, the new Shipping policy and product pages. Remove "1–2 business days" unless every SKU ships from inside the UAE.
+3. **Remove the duplicate black soap product safely.** In DSers, first confirm which of the two Shopify products (`…-100غ` or `…-100غ-1`) is mapped to the AliExpress supplier. Delete only the unmapped one, otherwise orders will stop routing. This needs owner approval because it is a delete.
+4. **Treat inventory as supplier stock.** DSers syncs AliExpress stock into Shopify, so the numbers can change, and a supplier can go out of stock or delist a product without warning. Enable DSers' out-of-stock/delist notifications and keep a backup supplier for each best-seller.
+5. **Price for real margins.** For each SKU: retail (AED, VAT-inclusive if registered) − AliExpress cost − shipping − payment/COD fees − an allowance for COD refusals and returns. Cross-border COD is risky, because refused parcels usually can't be returned economically. Consider prepaid-only for dropshipped items, or a COD fee.
+6. **Stop DSers overwriting edited product copy.** After rewriting titles, descriptions and claims (F7), check DSers' sync settings. Price, stock and product-info sync should not reintroduce supplier text or change prices without review.
+7. **Order flow test:** place one Shopify test order and confirm it appears in DSers as an order to be placed. **Do not place the AliExpress order** unless you intend to buy.
+8. **Cosmetics compliance for imports** **[?]:** cosmetics sent directly from AliExpress to UAE customers under King Store's name raise the question of who the importer is, and whether the products must be registered (Montaji or the relevant emirate authority). This is unresolved and needs checking with the licensing authority or a customs/regulatory adviser before selling cosmetics this way.
+9. **Supplier images:** check whether the AliExpress seller permits reuse of the images. Replace any images that show other brands' logos or watermarks.
+
 ## 6. Information needed from the owner
 
 **Business identity**
@@ -120,7 +134,7 @@ No supplier has been chosen or contacted. That decision belongs to the owner.
 
 **Commercial**
 6. Sourcing model (section 5): which option? Who is the actual supplier?
-7. Were today's 4 products imported by a dropshipping app? Which app, and is it staying?
+7. ~~Which app imported the products?~~ **Answered: DSers.** Still open: is DSers/AliExpress the long-term model, or a way to test demand before moving to local stock?
 8. Launch product list: which SKUs, real cost prices, target retail prices in AED.
 9. Real stock on hand (if any) vs supplier stock.
 10. Delivery partner (Aramex, Quiqup, Jeebly, Shipa, etc.), real delivery times, real rates, free-shipping threshold.
